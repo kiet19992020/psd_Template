@@ -1,0 +1,76 @@
+
+@include media-breakpoint-up(lg) {
+  .mod-content {
+    .btn_book {
+      letter-spacing: 2px;
+      margin-top: 19px;
+
+      color:$white;
+      background-color: $green;
+      @include sizeEx(287px, 50px);
+      border: none;
+      width: 100%;
+    }
+    .btn_img {
+      letter-spacing: 2px;
+      color: $white;
+      @include sizeEx(287px, 50px);
+      margin: 20px 0px 0px -11px;
+      background-color: $black;
+      border: none;
+      width: 100%;
+
+
+    }
+    .content-room {
+      padding: 29px 0px 0px 5px;
+      line-height: 15px;
+      animation: example 2s;
+      animation-delay: 2ms;
+      animation-play-state: random($limit: 3);
+      animation-timing-function: ease-in;
+      p {
+        font-size: 19px;
+      }
+    }
+    .room {
+      margin-top: 80px;
+
+      img {
+        position: relative;
+        animation: mymove 2s;
+        animation-play-state: random($limit: 3);
+        animation-timing-function: ease-in;
+      }
+    }
+
+  }
+    .mod-content:hover .content-room {
+      filter:blur(3px);
+      opacity:.5;
+      transform: scale(.98);
+      box-shadow:none;
+
+  }
+  .mod-content:hover .content-room:hover {
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    border-radius: 15px;
+  }
+
+
+}
+
+@keyframes mymove {
+  from {bottom: -290px;}
+  to {bottom: 5px;}
+}
+
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  50%  { left:100px; top:0px;}
+  75%  { left:0px; top:0px;}
+}

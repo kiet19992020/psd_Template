@@ -1,0 +1,23 @@
+---
+author: Frontend Team
+ourTeam: My Team
+---
+{% extends 'layouts/application.html' %}
+{% block bodyClass %}class="page-home"{% endblock %}
+{% block head %}
+  {% include "layouts/loadcss-home.html" %}
+{% endblock %}
+{% block content %}
+<main id="main-content" class="main-content">
+  {% include 'modules/mod-banner.html' %}
+  {% include "modules/mod-form.html" %}
+
+  <div class="container">
+    {% include "modules/mod-sub-content.html" %}
+    {% include "modules/mod-content.html" %}
+    {% include "modules/mod-content-info.html" %}
+  </div>
+
+</main>
+{% endblock %}
+

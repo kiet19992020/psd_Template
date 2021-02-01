@@ -1,0 +1,25 @@
+@include media-breakpoint-up(lg) {
+  .mod-banner {
+    background-image: url("../images/banner.png");
+    min-height: 563px;
+
+    @include background-size(cover);
+    position: relative;
+    .banner-content {
+      margin: 14px 0px 1px 5px;
+      padding-bottom: 84px;
+      @include font($ml, 40px,$black);
+      letter-spacing: 3px;
+      span {
+        @include font($ml,48px,$green);
+        padding-top: 0px 5px;
+        margin-left: 6px;
+        letter-spacing: 0px;
+      }
+      h5 {
+        padding-top: 16px;
+      }
+    }
+  }
+
+}

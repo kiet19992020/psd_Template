@@ -1,0 +1,30 @@
+
+@include media-breakpoint-up(lg) {
+  .mod-sub-content{
+    min-height: 317px;
+      h1 {
+        @include font($ml, 48px, $black);
+
+      }
+      h2 {
+        margin-top: -19px;
+        @include font($ml, 47px, $green,900);
+        letter-spacing: 0.7px
+      }
+      p {
+
+        @include font($ml, 22px,$black);
+        line-height: 35px;
+
+      }
+  }
+  .mod-sub-content:hover {
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    border-radius: 15px;
+  }
+}
+
+

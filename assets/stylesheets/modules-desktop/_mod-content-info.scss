@@ -1,0 +1,56 @@
+@include media-breakpoint-up(lg) {
+  .mod-content-info {
+    margin-top: 75px;
+    height: 505px;
+
+    .content-info-titel {
+      text-align: center;
+      p {
+        font-size: 33px;
+        padding: 17px 3px 0px 0px;
+      }
+      span {
+        color: $green;
+        @include font(Lato-sans-serif,38px,$green,bold);
+      }
+    }
+    .parenthesis {
+      margin: -59px 0px 0px 86px;
+
+      img:nth-child(2) {
+        margin: 21px 0px 0px 16px;
+      }
+    }
+    .parenthesis_2 {
+      margin: -10px 68px 0px 0px;
+      float: right;
+
+      img:nth-child(2) {
+        margin: 27px 0px 0px 18px;
+      }
+    }
+
+    .info {
+      padding-top: 41px;
+      @include font($ml,19px, $black, null ,italic);
+
+      ul {
+        padding: 0px 3px 6px 45px;
+        letter-spacing: 2.5px;
+        margin-left: 30px;
+      }
+      ul li {
+        line-height: 37px;
+        margin: 0px 0px 0px 0px;
+      }
+    }
+
+    .list_content {
+      background-image: url(/PSD_ROOM2/images/parenthesis.png), url(/PSD_ROOM2/images/parenthesis_2.png);
+      background-color: $white;
+      background-position: right top, left bottom;
+      background-repeat: no-repeat no-repeat;
+    }
+
+  }
+}

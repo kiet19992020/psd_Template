@@ -1,0 +1,34 @@
+<!-- module 'Mod Content' -->
+<section class="module mod-content">
+
+  {% for room in rooms %}
+  {% set even = loop.index % 2 == 0 %}
+  <div class="room">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12 {{ 'text-md-right'if even else 'pr-md-0' }}">
+        <h5 class="d-block d-sm-none "><strong>{{ room.name }}</strong></h5>
+        <img class=" img-fluid mw-100 h-auto" src="{{ room.url }}" alt="room.png">
+
+      </div>
+      <div class="content-room col-md-6 col-sm-6 col-xs-12 {{ 'order-md-first text-md-right' if even}}">
+        <p class="d-none d-sm-block "><strong>{{ room.name }}</strong></p>
+        <p>One queen-sized bed with a single</p>
+        <p>bunk overhead</p>
+        <p>Built-in desk area</p>
+        <p>Wash basin</p>
+        <p>No ensuite bathroom</p>
+        <p>When three's not a crowd, we've</p>
+        <p>got these 2 +1 lofts</p>
+        <div class="row btn_room">
+          <div class="col-6">
+            <button type="button" class="btn_book">BOOK NOW</button>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn_img">VIEW MOR IMAGES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>

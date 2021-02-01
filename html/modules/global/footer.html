@@ -1,0 +1,75 @@
+<footer id="footer" class="module footer">
+
+  <section class="container">
+    <div class="footer_content">
+        <div class="title_footer">
+          <img src="./assets/images/shap_under.png" alt="">
+          <h1>GROUP BOOKING? <span>INQUIRY?</span></h1>
+          <p>We love to hear from you! Drop us an message, then we will in touch!</p>
+        </div>
+        <div class="footer-input">
+            <div class="row">
+                <div class="col-md-6">
+                  {% from 'macros/form.html' import formBlock %}
+                  {{ formBlock(lable,'text', 'Username') }}
+                  {{ formBlock(lable,'text', 'Email') }}
+                   </div>
+                <div class="col-md-6">
+                  {% from 'macros/form.html' import textarea %}
+                  {{ textarea(label,'col-md-0','col-md-11', 'message') }}
+                </div>
+            </div>
+        </div>
+        <br>
+         <button class="btn_submit" type="submit">SEND</button>
+    </div>
+  </section>
+  <section class="container-fuild">
+    <div class="footer-content">
+      <div class="container">
+        <div class="content-menu-footer">
+          <div class="row">
+            <div class="logo_footer col-md-3">
+              <a href=""><img src="./assets/images/logo_footer.png" alt="logo_footer"></a>
+            </div>
+            <div class="col-md-9">
+              <div class="menu-footer">
+                  <ul>
+                    <li>ABOUT US</li>
+                    <li>ROOMS</li>
+                    <li>GALLERY</li>
+                    <li>EXPERICEN NHATRANG</li>
+                    <li>CONTACT US</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="w-100 lazy" src="./assets/images/space_footer.png" alt="">
+        <div class="footer-address">
+          <div class="row">
+            <div class="col-md-6 text-xl-left">
+              <p>30. jalanTun HS lee.500000 Kulaka lumpur</p>
+              <p>Tele phone: +603 2022 0788</p>
+              <p>LINE & Whatsapp: +603 2022 0788</p>
+              <p>Email: backhome.com.my</p>
+              <p>GST: 000276406272</p>
+            </div>
+            <div class="col-md-6 text-xl-right">
+              <div class="footer-contact">
+                <ul>
+                  <li><a href=""><img src="./assets/images/fb.png" alt=""></a></li>
+                  <li><a href=""><img src="./assets/images/insta.png" alt=""></a></li>
+                  <li><a href=""><img src="./assets/images/Forma.png" alt=""></a></li>
+                </ul>
+              </div>
+              <p>Privacy&Term of USE</p>
+              <p>Cropyrigt 2015 design wright LLC. ALL Rights Reserved. </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+   </div>
+  </section>
+</footer>

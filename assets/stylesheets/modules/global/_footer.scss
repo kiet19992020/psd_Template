@@ -1,0 +1,74 @@
+@include media-breakpoint-down(lg) {
+  .footer {
+    margin-top: 50px;
+    background-image: url("../images/footer_2.png");
+    min-height: 463px;
+    @include background-size(cover);
+    position: relative;
+    text-align: center;
+    width: 100%;
+    .title_footer {
+      text-align: center;
+      h1 {
+        letter-spacing: 2px;
+        @include font($ml,28px,$black);
+      }
+      span {
+        @include font($ml,29.5px,$green,bold);
+      }
+      img {
+        max-height: 25px;
+      }
+
+      p {
+        margin-top: -20px;
+        font-size: 14px;
+      }
+    }
+    .footer-input {
+      padding: 3px 7.5px 0px 3px;
+      textarea {
+        height: 100px;
+        margin-top: 0px;
+       justify-content: space-between;
+      }
+    }
+
+    .btn_submit {
+      margin-bottom: 15px;
+      padding: 6px 97px;
+      background-color: $green;
+      color:$white;
+      border: none;
+    }
+    .logo_footer {
+      padding: 50px 0px;
+    }
+    .content-menu-footer {
+      img {
+        padding-right: 0px;
+      }
+    }
+    .footer-content {
+      background-color:$black;
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+
+    .menu-footer {
+      ul {
+        display: none;
+      }
+    }
+    .footer-contact {
+      ul li {
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 3px;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,49 @@
+// module 'Mod Content'
+// .mod-content {
+//
+
+// }
+
+
+@include media-breakpoint-down(lg) {
+  .mod-content {
+    margin-top: 0px;
+    .btn_room {
+      width: 100%;
+      > .col-6 {
+        padding-right: 9px;
+         padding-left: 2px;
+      }
+    }
+    .btn_book {
+      @include sizeEx(100%,27px);
+      background-color: $green;
+      color: $white;
+      border: none;
+     }
+    .btn_book,
+    .btn_img {
+      @include sizeEx(100%,27px);
+      background-color: $black;
+      color: $white;
+      border: none;
+    }
+    .room {
+      margin-top: 30px;
+    }
+    .content-room {
+      margin: 19px auto;
+      padding: 0px 0px 0px 15px;
+      line-height: 10px;
+      font-size: 12px;
+      p {
+        font-size: 15px;
+      }
+    }
+    .row {
+
+      margin-right: -7.5px;
+      margin-left: -7.5px;
+    }
+  }
+}

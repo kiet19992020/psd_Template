@@ -1,0 +1,26 @@
+<!-- module 'Mod Form' -->
+
+{% import "macros/form.html" as forms %}
+
+<section class="module mod-form">
+  <div class="container">
+    <div class="form-menu row">
+      <div class="input-menu col-xs-6 col-md-6 col-lg-3">
+        {{ forms.formBlock(lable,'text', 'Username') }}
+      </div>
+      <div class="input-menu col-xs-6 col-md-6 col-lg-3">
+        {{ forms.formBlock(lable,'text', 'Email') }}
+      </div>
+
+      <div class="input-menu col-xs-6 col-md-6 col-lg-3">
+        {{ forms.select(lable,'guest', 'Email') }}
+      </div>
+      <div class="input-menu col-xs-6 col-md-6 col-lg-3 ">
+        <button type="button" class="btn btn-dark btn-lg btn-block">BOOK NOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+

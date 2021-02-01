@@ -1,0 +1,55 @@
+// module 'Mod Content Info'
+// .mod-content-info {
+
+
+// }
+@include media-breakpoint-down(lg) {
+  .mod-content-info {
+    padding: 0px;
+    margin: 10px;
+    .content-info-titel {
+      text-align: center;
+      p {
+        font-size: 29.5px;
+        padding: 17px 3px 0px 0px;
+        letter-spacing: 2px;
+      }
+      span {
+        letter-spacing: 2px;
+        @include font ($ml,null,$green,bold);
+      }
+    }
+    .info {
+      padding: 0px;
+      font-weight: bold;
+      ul {
+        margin-left: 15px;
+        letter-spacing: 1px;
+        padding: 0px auto;
+      }
+      ul li {
+        font-size: 9.5px;
+      }
+    }
+    .parenthesis {
+      img {
+        @include sizeEx(25px,25px)
+      }
+
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+
+    .parenthesis_2 {
+      float: right;
+      img {
+        @include sizeEx(25px,25px);
+        margin: 0px;
+      }
+      img:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
